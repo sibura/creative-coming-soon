@@ -79,3 +79,11 @@ textarea.form-control {
    color: white;
    text-align: center;
 }
+.footer .copyright {
+    color: #fff;
+/*    float: center;
+*/    line-height: 32px;
+    margin-left: 200px;
+    margin-top: 20px;
+    text-align: center;
+}
