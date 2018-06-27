@@ -4,10 +4,144 @@
 	<title>Creative Sound Fuzion - Coming Soon</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!-- 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+ -->
+	<style type="text/css">
+		
+
+.container1 {
+  width: 550px;
+  display: block;
+  margin: auto;
+  position: relative;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.menu_opener {
+  display: none;
+}
+
+.menu_opener:checked ~ .link_one {
+  top: 65px;
+}
+.menu_opener:checked ~ .link_two {
+  left: 385px;
+}
+.menu_opener:checked ~ .link_three {
+  top: 385px;
+}
+.menu_opener:checked ~ .link_four {
+  left: 65px;
+}
+.menu_opener:checked ~ .barre_hamburger {
+  opacity: 0;
+}
+.menu_opener:checked ~ .menu_opener_label:after {
+  transform: rotate(45deg);
+  top: 70px;
+}
+.menu_opener:checked ~ .menu_opener_label:before {
+  transform: rotate(-45deg);
+  top: 70px;
+}
+
+.menu_opener_label {
+  background:  #f1c40f;
+  width: 150px;
+  height: 150px;
+  display: block;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  z-index: 10;
+}
+.menu_opener_label:after {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background: #000;
+  content: "";
+  width: 50px;
+  height: 10px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.menu_opener_label:before {
+  position: absolute;
+  top: 90px;
+  left: 50px;
+  background: #000;
+  content: "";
+  width: 50px;
+  height: 10px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.barre_hamburger {
+  width: 50px;
+  height: 10px;
+  position: absolute;
+  top: 270px;
+  left: 250px;
+  background: #000;
+  z-index: 20;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.link_general {
+  width: 80px;
+  height: 80px;
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 225px;
+  left: 225px;
+  background: #ecf0f1;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.link_one {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABAAgMAAADXB5lNAAAACVBMVEX///8AAAAAAAB+UaldAAAAAnRSTlMAgJsrThgAAAB+SURBVHhe3cyxjcMwFETBr8RFqBrWo2pYBBNOlZdy/4UGbMCb7QumPrprtPCaLdyriiM8O8PFiPBiRrhZER52cRIMToLJSbA4CTZBQBAQBAQBndAJndAJnTCSYCbBSoKdBEYSzCRYSbCTwEiCmQQrCXbJ+R+q8n45VP1CeH9/mC1fxjmFPCwAAAAASUVORK5CYII826f6fa0b1d2d29dd5b523f646d57d73") #ff0066 no-repeat center center;
+}
+
+.link_two {
+  background: url("images/play.png") #ff0066 no-repeat center center;
+}
+
+.link_three {
+  background: url("images/email.png") #ff0066 no-repeat center center;
+}
+
+.link_four {
+  background: url("images/menu.png") #ff0066 no-repeat center center;
+}
+
+	</style>
 </head>
 <body>
 	<div class="top-bg">
-		<!-- <input onclick='responsiveVoice.speak("Welcome To A place where all house music creativity is shared, by like minded individuals. The Sound of Creative Sound Fuzion Stay Tuned theres more to come. Thank you Africans", "UK English Female", {pitch: 1});' type='button' value='Play' autoplay /> -->
+		<div class="container1">
+	<input type="checkbox" id="menu_opener_id" class="menu_opener">
+  <label for="menu_opener_id" class="menu_opener_label"></label>
+  <div class="barre_hamburger"></div>
+  <a href="#" class="link_one link_general"></a>
+  <a href="about.html" class="link_two link_general"></a>
+  <a href="contactus.html" class="link_three link_general"></a>
+  <a href="#" class="link_four link_general"></a>
+  </input>
+</div>
 		<nav class="navbar">
 			<div class="container">
 				<div class="navbar-header top-nav">
@@ -17,13 +151,29 @@
 						<li><a href="https://www.facebook.com/creativesoundfuzion/" target="_blank"><img src="images/facebook.png"></a></li>
 						<li><a href="https://twitter.com/FuzionSound" target="_blank"><img src="images/twitter.png"></a></li>
 						<li><a href="../navbar-static-top/" target="_blank"><img src="images/soundcloud.png"></a></li>
-						<!-- <hr>
-						<li><p id="demo" style="font-size:30px; color:#ff0066; text-align: center;"></p></li> -->
+						
 					</ul>
+
 				</div>
-			
+
 		</nav>
+
 </div>
+
+<!--- Test -->
+<!-- <div class="container">
+  <h1>Cool menu in full CSS</h1>
+  <input type="checkbox" id="menu_opener_id" class="menu_opener">
+  <label for="menu_opener_id" class="menu_opener_label"></label>
+  <div class="barre_hamburger"></div>
+  <a href="#" class="link_one link_general"></a>
+  <a href="#" class="link_two link_general"></a>
+  <a href="#" class="link_three link_general"></a>
+  <a href="#" class="link_four link_general"></a>
+  </input>
+</div> -->
+<!-- End -->
+
 		<div id="mycarousel" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
@@ -85,22 +235,24 @@
       <!-- <div class="navbar"> -->
         <div class="carousel-caption">
      
-            <p id="demo" style="font-size:40px; color:#ff0066; text-align: center; padding-top: 220px;"></p><div class="text-border"></div>
-            	<div class="block1" style="text-align: center;">Upload</div>
-				<div class="block2" style="text-align: center;">Mix</div>
-				<div class="block3" style="text-align: center;">Music</div>
-				<div class="block4" style="text-align: center;">Upload</div>
+            <p id="demo" style="font-size:40px; color:#ff0066; text-align: center; padding-top: 220px;"></p><p id="about" style="font-size:40px; color:#ff0066; text-align: center;"></p><div class="text-border"></div>
+            	<div class="block1" style="text-align: center;"><img src=""> Upload</div>
+				<div class="block2" style="text-align: center;"><img src=""> Mix</div>
+				<div class="block3" style="text-align: center;"><img src=""> Music</div>
+				<div class="block4" style="text-align: center;"><img src=""> Upload</div>
         </div>
   <!--  </div>
- --></div> 
-<!-- <hr>
+  	
+
+</div> 
+<hr>
 						<li><p id="demo" style="font-size:30px; color:#ff0066; text-align: center;"></p></li> -->
-<audio autoplay>
+<!-- <audio autoplay>
 	<source src="images/Darkness Unleashed Tech Mix.mp3" type="audio/mpeg">
 
 		<p>If you can read this, your browser does not support the audio element.</p>
 	</audio>
-
+ -->
 	
 </div>
 <!-- Controls -->
@@ -115,28 +267,47 @@
 
 </div>
 
-<div class="footer">
-	
-<!-- 	<div class="block1">Upload</div>
-	<div class="block2">Mix</div>
-	<div class="block3">Music<br/> Marketing</div>
-	<div class="block4">Upload</div> -->
-	<!-- <a href="https://twitter.com/audisouthafrica" target="_blank"><img src="http://microsites.audi.co.za/mailers/95582-Crm-mailers/myAudiworld/facebook.jpg" alt="Facebook"></a>
-	<img src="http://mailers.audi.co.za/common-images/spacer.png" alt="Facebook">
-	<a href="https://twitter.com/audisouthafrica" target="_blank"><img src="http://microsites.audi.co.za/mailers/95582-Crm-mailers/myAudiworld/twitter.jpg" alt="Twitter"></a>
-	<img src="http://mailers.audi.co.za/common-images/spacer.png" alt="Facebook">
-	<a href="https://www.youtube.com/user/AudiSouthAfrica" target="_blank"><img src="http://microsites.audi.co.za/mailers/95582-Crm-mailers/myAudiworld/youtube.jpg" alt="Youtube"></a>
-	<img src="http://mailers.audi.co.za/common-images/spacer.png" alt="Facebook">
-	<a href="https://www.linkedin.com/company-beta/2773675/" target="_blank"><img src="http://microsites.audi.co.za/mailers/95582-Crm-mailers/myAudiworld/linkedin.jpg" alt="linkedin"></a>
-	<img src="http://mailers.audi.co.za/common-images/spacer.png" alt="Facebook">
-	<a href="https://instagram.com/audisouthafrica/?hl=en" target="_blank"><img src="http://microsites.audi.co.za/mailers/95582-Crm-mailers/myAudiworld/instagram.jpg" alt="Instagram"></a>
- -->
-</div>
-
 
 <script>
+	//Menu Test
+	window.fn = {};
+
+window.fn.open = function() {
+  var menu = document.getElementById('menu');
+  menu.open();
+};
+
+window.fn.load = function(page, data) {
+  var content = document.getElementById('myNavigator');
+  var menu = document.getElementById('menu');
+  content.pushPage(page, data)
+    .then(menu.close.bind(menu));
+};
+
+window.fn.pop = function() {
+  var content = document.getElementById('myNavigator');
+  content.popPage();
+};
+
+document.addEventListener('init', function(event) {
+  var page = event.target;
+
+  if (page.id === 'page1') {
+    page.querySelector('#push-button').onclick = function() {
+      document.querySelector('#myNavigator').pushPage('page3.html', {data: {title: 'Page 3'}});
+    };
+  } else if (page.id === 'page2' || page.id === 'page3') {
+    page.querySelector('ons-toolbar .center').innerHTML = page.data.title;
+  }
+});
+
+
+	//end menu tester
+
+
+
 // Set the date we're counting down to
-var countDownDate = new Date("April 15, 2018 15:37:25").getTime();
+var countDownDate = new Date("August 15, 2018 15:37:25").getTime();
 
 // Update the count down every 1 second
 var countdownfunction = setInterval(function() {
@@ -158,13 +329,18 @@ var countdownfunction = setInterval(function() {
     + minutes + "m " + seconds + "s ";
     
     // If the count down is over, write some text 
+
+
     if (distance < 0) {
     	clearInterval(countdownfunction);
     	document.getElementById("demo").innerHTML = "EXPIRED";
+    	document.getElementById("about").innerHTML = "<a href='about.html'>About</a>";
     }
 }, 1000);
-</script>
 
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.3.min.js" integrity="sha256-ivk71nXhz9nsyFDoYoGf2sbjrR9ddh+XDkCcfZxjvcM=" crossorigin="anonymous"></script>
 <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>

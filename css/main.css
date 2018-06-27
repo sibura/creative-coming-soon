@@ -22,19 +22,17 @@ p{
 .carousel-caption {
   right: 20%;
   left: 20%;
-  /* padding-bottom: 30px; */
-  top: 40%;
+  padding-bottom: 30px; 
+  top: 80%;
 }
-/*.top-nav {
-    
-  }*/
-  .top-bg {
-   background-color:rgba(0,0,0,.3);
-   position: absolute;
-   z-index: 12;
-   width: 100%;
- }
- .h1-border {
+
+.top-bg {
+ background-color:rgba(0,0,0,.3);
+ position: absolute;
+ z-index: 12;
+ width: 100%;
+}
+.h1-border {
   height: 4px;
   background: #fff;
   width: 75%;
@@ -148,4 +146,8 @@ display: inline-block;
     height: 75px;
     margin: 10px;
     border: 3px solid #73AD21;  
-}*/
+    }*/
+
+    #contact{
+      background-image: url('images/6jpg');
+    }
